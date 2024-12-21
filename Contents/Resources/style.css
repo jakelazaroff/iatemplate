@@ -1,0 +1,35 @@
+@import url("./style/fonts.css");
+@import url("./style/reset.css");
+@import url("./style/core.css");
+@import url("./style/prism.css");
+
+:root {
+  --font-body: "Public Sans", sans-serif;
+  --font-mono: monospace;
+  font-family: var(--font-body);
+}
+
+code,
+kbd {
+  padding: 0.25em 0.5em;
+  border-radius: 4px;
+  background-color: #eeeeee;
+  font-family: var(--font-mono);
+}
+
+pre {
+  padding: 1rem;
+  overflow: auto;
+  border-radius: 8px;
+  white-space: pre-wrap;
+  background-color: #eeeeee;
+
+  code {
+    padding: 0;
+    background-color: transparent;
+  }
+}
+
+figure pre {
+  margin-top: 0;
+}

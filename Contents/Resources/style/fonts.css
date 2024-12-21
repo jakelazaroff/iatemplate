@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Public Sans";
+  src: url("./publicsans.woff2") format("woff2");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("./publicsans-italic.woff2") format("woff2");
+  font-style: italic;
+}

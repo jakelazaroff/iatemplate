@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" media="all" href="./style.css" />
+    <script src="./vendor/prism.js"></script>
+    <script type="module">
+      const content = document.querySelector("[data-document]");
+      content.addEventListener("ia-writer-change", async (e) => {
+        for (const code of content.querySelectorAll("pre code")) {
+          const lang = code.className;
+          code.innerHTML = Prism.highlight(
+            code.innerText,
+            Prism.languages[lang],
+          );
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <article id="article" data-document>&nbsp;</article>
+  </body>
+</html>

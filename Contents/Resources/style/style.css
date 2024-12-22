@@ -35,6 +35,7 @@ pre {
   background-color: #eeeeee;
 
   code {
+    line-height: 1.75;
     padding: 0;
     background-color: transparent;
   }

@@ -9,3 +9,16 @@
   src: url("./publicsans-italic.woff2") format("woff2");
   font-style: italic;
 }
+
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("./cascadiacode.woff2") format("woff2");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("./cascadiacode-italic.woff2") format("woff2");
+  font-style: italic;
+  font-feature-settings: "calt", "ss01";
+}

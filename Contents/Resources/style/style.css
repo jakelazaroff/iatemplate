@@ -1,16 +1,21 @@
-@import url("./style/fonts.css");
-@import url("./style/reset.css");
-@import url("./style/core.css");
-@import url("./style/prism.css");
+@import url("./fonts.css");
+@import url("./reset.css");
+@import url("./core.css");
+@import url("./prism.css");
 
 :root {
   --font-body: "Public Sans", sans-serif;
-  --font-mono: monospace;
+  --font-mono: "Cascadia Code", monospace;
   font-family: var(--font-body);
 }
 
 body {
   margin-trim: block;
+}
+
+code {
+  font-size: 0.9em;
+  font-weight: 350;
 }
 
 code,

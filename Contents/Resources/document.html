@@ -9,10 +9,7 @@
       content.addEventListener("ia-writer-change", async (e) => {
         for (const code of content.querySelectorAll("pre code")) {
           const lang = code.className;
-          code.innerHTML = Prism.highlight(
-            code.innerText,
-            Prism.languages[lang],
-          );
+          code.innerHTML = Prism.highlight(code.innerText, Prism.languages[lang]);
         }
       });
     </script>

@@ -44,3 +44,19 @@ pre {
 figure pre {
   margin-top: 0;
 }
+
+blockquote {
+  margin-block: 1lh;
+  padding: 1rem;
+  border-radius: 4px;
+  background-color: #eeeeee;
+  font-style: italic;
+
+  > :first-child {
+    margin-block-start: 0;
+  }
+
+  > :last-child {
+    margin-block-end: 0;
+  }
+}

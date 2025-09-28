@@ -6,7 +6,12 @@
 :root {
   --font-body: "Public Sans", sans-serif;
   --font-mono: "Cascadia Code", monospace;
+  --color-surface: #eeeeee;
   font-family: var(--font-body);
+
+  &.night-mode {
+    --color-surface: #f5f5f522;
+  }
 }
 
 body {
@@ -49,7 +54,7 @@ blockquote {
   margin-block: 1lh;
   padding: 1rem;
   border-radius: 4px;
-  background-color: #eeeeee;
+  background-color: var(--color-surface);
   font-style: italic;
 
   > :first-child {
